@@ -47,6 +47,10 @@
     </div>
 
     <footer class="border-top footer text-muted">
+        @*统计页面访问次数*@
+        <div>
+            @await Component.InvokeAsync("Counter");
+        </div>
         <div class="container">
             &copy; 2019 - RedisDemo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
